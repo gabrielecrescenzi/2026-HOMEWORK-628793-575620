@@ -1,6 +1,5 @@
 package it.uniroma3.diadia.attrezzi;
 
-import it.uniroma3.diadia.ambienti.Stanza;
 
 /**
  * Una semplice classe che modella un attrezzo. Gli attrezzi possono trovarsi
@@ -10,8 +9,6 @@ import it.uniroma3.diadia.ambienti.Stanza;
  * @author docente di POO
  * @author Davide De Prosperis, Matricola: 575620
  * @author Gabriele Crescenzi, Matricola: 628793
- * @see Stanza
- * @see Borsa
  * @version 2.0
  */
 

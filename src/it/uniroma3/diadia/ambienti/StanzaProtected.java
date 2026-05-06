@@ -6,33 +6,33 @@ import it.uniroma3.diadia.attrezzi.Attrezzo;
  * Classe Stanza - una stanza in un gioco di ruolo. Una stanza e' un luogo
  * fisico nel gioco. E' collegata ad altre stanze attraverso delle uscite. Ogni
  * uscita e' associata ad una direzione.
- * 
- * @author docente di POO
+ * @author Davide De Prosperis, Matricola: 575620
+ * @author Gabriele Crescenzi, Matricola: 628793
  * @see Attrezzo
  * @version base
  */
 
-public class Stanza {
+public class StanzaProtected {
 
 	private static final int NUMERO_MASSIMO_DIREZIONI = 4;
 	private static final int NUMERO_MASSIMO_ATTREZZI = 10;
 
-	private String nome;
+	protected String nome;
 
-	private Attrezzo[] attrezzi;
-	private int numeroAttrezzi;
+	protected Attrezzo[] attrezzi;
+	protected int numeroAttrezzi;
 
-	private Stanza[] stanzeAdiacenti;
-	private int numeroStanzeAdiacenti;
+	protected Stanza[] stanzeAdiacenti;
+	protected int numeroStanzeAdiacenti;
 
-	private String[] direzioni;
+	protected String[] direzioni;
 
 	/**
 	 * Crea una stanza. Non ci sono stanze adiacenti, non ci sono attrezzi.
 	 * 
 	 * @param nome il nome della stanza
 	 */
-	public Stanza(String nome) {
+	public StanzaProtected(String nome) {
 		this.nome = nome;
 		this.numeroStanzeAdiacenti = 0;
 		this.numeroAttrezzi = 0;
@@ -173,7 +173,7 @@ public class Stanza {
 	/**
 	 * Rimuove un attrezzo dalla stanza (ricerca in base al nome).
 	 * 
-	 * @param attrezzo l'attrezzo dell'attrezzo da rimuovere
+	 * @param attrezzo l'attrezzo da rimuovere
 	 * @return true se l'attrezzo e' stato rimosso, false altrimenti
 	 */
 	public boolean removeAttrezzo(Attrezzo attrezzo) {

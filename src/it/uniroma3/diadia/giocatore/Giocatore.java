@@ -8,11 +8,11 @@ package it.uniroma3.diadia.giocatore;
  * @author Davide De Prosperis, Matricola: 575620
  * @author Gabriele Crescenzi, Matricola: 628793
  * @see Borsa
- * @version base
+ * @version 2.0
  */
 
 public class Giocatore {
-	static final private int CFU_INIZIALI = 20;
+	static final public int CFU_INIZIALI = 20;
 	private Borsa borsa;
 	private int cfu;
 

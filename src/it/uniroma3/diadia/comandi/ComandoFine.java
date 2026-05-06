@@ -1,0 +1,39 @@
+package it.uniroma3.diadia.comandi;
+
+import it.uniroma3.diadia.Partita;
+import it.uniroma3.diadia.IO;
+
+/**
+ * Classe dedicata al comando "fine"
+ * 
+ * @author Davide De Prosperis, Matricola: 575620
+ * @author Gabriele Crescenzi, Matricola: 628793
+ * @version 2.0
+ * @see Comando
+ * @see Partita
+ * @see IO
+ * 
+ */
+public class ComandoFine implements Comando {
+
+	@Override
+	public void esegui(Partita partita, IO io) {
+		io.mostraMessaggio("Grazie di aver giocato!");
+		partita.setFinita();
+	}
+
+	@Override
+	public void setParametro(String parametro) {
+	}
+
+	@Override
+	public String getNome() {
+		return "fine";
+	}
+
+	@Override
+	public String getParametro() {
+		return null;
+	}
+
+}
